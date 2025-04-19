@@ -1,0 +1,117 @@
+$HOME/.local/share/Steam/steamui/skins/simply-dark/colors.css
+:root {
+    /** 
+    * @name Light Color
+    * @description Button Colors (used in some webkit element)
+    */
+    --color-light: rgb(<wallbash_1xa1_rgb>);
+    /** 
+    * @name Dark Color
+    * @description TitleBar, TitleBar Buttons, Library <div> background, Scrollbar (used in some webkit element)
+    */
+    --color-dark: #<wallbash_1xa1>;
+    /** 
+    * @name Darker Color
+    * @description Main Background, Library and TitleBar accent (used in some webkit element)
+    */
+    --color-darker: #<wallbash_pry1>;
+    /** 
+    * @name Darkest Color
+    * @description Low priority accent color (used in some webkit element)
+    */
+    --color-darkest: #<wallbash_pry1>;
+    /** 
+    * @name Scrollbar Color
+    * @description Webkit scrollbar color
+    */
+    --scrollbar: #<wallbash_1xa1>;
+    /** 
+    * @name Pure Black
+    * @description Low priority accent color (used in some webkit element)
+    */
+    --black: #000000;
+    /** 
+    * @name Slight Black
+    * @description Webkit colors 
+    */
+    --blacker-ish: #<wallbash_pry1>;
+    /** 
+    * @name Slightly Darker Black
+    * @description Webkit colors 
+    */
+    --blacker: #1c1c1c;
+    /** 
+    * @name Light Grey
+    * @description Webkit colors 
+    */
+    --grey: #2e2e2f;
+    /** 
+    * @name Grey
+    * @description Webkit colors 
+    */
+    --lightgrey: #<wallbash_1xa2>;
+    /** 
+    * @name Light Grey
+    * @description Webkit colors 
+    */
+    --lightergrey: #353535;
+    /** 
+    * @name Slightly Light Grey
+    * @description Webkit colors 
+    */
+    --grey-ish: #454545;
+    /** 
+    * @name Slightly More Darker Grey
+    * @description Webkit colors 
+    */
+    --darkergrey: #<wallbash_1xa2>;
+    /** 
+    * @name Slightly A Little More Darker Grey
+    * @description Webkit colors 
+    */
+    --thegrey: #<wallbash_pry1>;
+    /** 
+    * @name Darker Grey Than Above but Not Darkest
+    * @description Webkit colors 
+    */
+    --begrey: #262627;
+     /** 
+    * @name A Slightly Darker Grey Than Above
+    * @description Webkit colors 
+    */
+    --littlegrey: #282828;
+    /** 
+    * @name Darkest Grey
+    * @description Webkit colors 
+    */
+    --darkgrey: #1e1e1f;
+    /** 
+    * @name Darker White
+    * @description Webkit colors 
+    */
+    --darkerwhite: #<wallbash_txt4>;
+    /** 
+    * @name Dark White
+    * @description Webkit colors 
+    */
+    --darkwhite: #<wallbash_txt3>;
+    /** 
+    * @name White
+    * @description Webkit colors 
+    */
+    --white: #<wallbash_txt1>;
+    /** 
+    * @name Ingame
+    * @description Ingame color
+    */
+    --ingame: #90ba3c;
+    /** 
+    * @name Online
+    * @description Online color
+    */
+    --online: #57cbde;
+    /** 
+    * @name Offline
+    * @description Offline color
+    */
+    --offline: #898989;
