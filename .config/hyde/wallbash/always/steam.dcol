@@ -89,12 +89,12 @@ $HOME/.local/share/Steam/steamui/skins/simply-dark/colors.css
     * @name Darker White
     * @description Webkit colors 
     */
-    --darkerwhite: #<wallbash_txt4>;
+    --darkerwhite: #<wallbash_pry3>;
     /** 
     * @name Dark White
     * @description Webkit colors 
     */
-    --darkwhite: #<wallbash_txt3>;
+    --darkwhite: #<wallbash_txt1>;
     /** 
     * @name White
     * @description Webkit colors 
