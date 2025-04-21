@@ -15,10 +15,10 @@ else
 fi
 
 git clone https://github.com/shdwmtr/simply-dark.git ~/.local/share/Steam/steamui/skins/simply-dark
+color.set.sh --single ~/.config/hyde/wallbash/always/steam.dcol
 
 # Final instructions
 echo "To apply the theme:"
-echo "- Refresh Wallbash"
 echo "- Restart Steam"
 echo "- Go into the Millennium menu"
 echo "- Click the settings button for the theme"
