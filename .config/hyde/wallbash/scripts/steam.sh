@@ -1,26 +1,72 @@
 #!/bin/bash
 
-if ! command -v millennium >/dev/null 2>&1; then
-    echo "'millennium' command not found. Aborting."
-    exit 1
-fi
+SYSTEMCTL_PATH=$(command -v systemctl)
+USERNAME=$(whoami)
 
-pkexec chown -R $USER:$USER /home/$USER/.local/share/millennium
+# Sudoers rule to add
+SUDOERS_LINE="$USERNAME ALL=(ALL) NOPASSWD: $SYSTEMCTL_PATH restart plugin_loader"
 
-if [ -f /usr/bin/steam.millennium.bak ]; then
-    echo "already patched"
+# dcol paths
+COLOR_CONFIGS=(
+    "~/.config/hyde/wallbash/always/steam#config.dcol"
+    "~/.config/hyde/wallbash/always/steam#index.dcol"
+    "~/.config/hyde/wallbash/always/steam#theme.dcol"
+)
+
+if [[ "$1" == "-r" ]]; then
+    # restart plugin_loader
+    sudo $SYSTEMCTL_PATH restart plugin_loader
 else
-    echo "not patched"
-    pkexec millennium patch
+    # Install Decky Loader
+    if [ ! -d "$HOME/homebrew" ]; then
+        echo "Decky Loader not detected. Running installer..."
+        sh -c 'rm -f /tmp/user_install_script.sh; \
+        if curl -S -s -L -O --output-dir /tmp/ --connect-timeout 60 https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/user_install_script.sh; \
+        then bash /tmp/user_install_script.sh; \
+        else echo "Something went wrong, please report this if it is a bug"; read; fi'
+
+        # Step 2: Clone SteamBash and copy themes
+        echo "Cloning SteamBash and installing themes..."
+        git clone https://github.com/dim-ghub/SteamBash.git "$HOME/SteamBash"
+
+        if [ -d "$HOME/SteamBash/themes" ]; then
+            mkdir -p "$HOME/homebrew/themes"
+            cp -r "$HOME/SteamBash/themes/"* "$HOME/homebrew/themes/"
+            echo "Themes copied to ~/homebrew/themes/"
+        else
+            echo "Warning: SteamBash/themes folder not found."
+        fi
+    fi
+
+    # sudo rule
+    if ! command -v pkexec &>/dev/null; then
+        echo "Error: pkexec is not installed."
+        exit 1
+    fi
+
+    pkexec bash -c "
+        TEMP_FILE=\$(mktemp)
+        cp /etc/sudoers \$TEMP_FILE
+
+        if ! grep -Fxq \"$SUDOERS_LINE\" \$TEMP_FILE; then
+            echo \"$SUDOERS_LINE\" >> \$TEMP_FILE
+        fi
+
+        if visudo -c -f \$TEMP_FILE; then
+            cp \$TEMP_FILE /etc/sudoers
+            echo 'Sudo rule added successfully.'
+        else
+            echo 'Syntax error in sudoers file. Aborting.'
+        fi
+
+        rm -f \$TEMP_FILE
+    "
+
+    # apply wallbash
+    echo "Applying Steam color configs..."
+    for config in "${COLOR_CONFIGS[@]}"; do
+        # Expand tilde
+        eval CONFIG_PATH="$config"
+        color.set.sh --single "$CONFIG_PATH"
+    done
 fi
-
-git clone https://github.com/shdwmtr/simply-dark.git ~/.local/share/Steam/steamui/skins/simply-dark
-color.set.sh --single ~/.config/hyde/wallbash/always/steam.dcol
-
-# Final instructions
-echo "To apply the theme:"
-echo "- Restart Steam"
-echo "- Go into the Millennium menu"
-echo "- Click the settings button for the theme"
-echo "- Navigate to 'Colors' and click 'Reset' next to each one"
-echo "Sorry the process is a bit long — it's the only known way right now."
