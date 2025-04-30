@@ -1,0 +1,58 @@
+$HOME/homebrew/themes/Color\ Master/shared/index.css
+:root {
+  --color-master-background-dark:    #<wallbash_pry1>;
+  --color-master-background:         #<wallbash_pry1>;
+  --color-master-background-bright:  #<wallbash_1xa1>;
+  --color-master-foreground:         #<wallbash_1xa2>;
+  --color-master-foreground-bright:  #<wallbash_1xa4>;
+  --color-master-midtone1:           #<wallbash_1xa1>;
+  --color-master-midtone2:           #<wallbash_1xa5>;
+  --color-master-midtone3:           #<wallbash_pry2>;
+  --color-master-midtone4:           #<wallbash_1xa2>;
+  --color-master-midtone5:           #<wallbash_1xa3>;
+  --color-master-highlight:          #<wallbash_1xa1>;
+  --color-master-highlight_hover:    #<wallbash_1xa2>;
+  --color-master-highlight2:         #98BC37;
+  --color-master-warning:            #F75341;
+
+  --color-master-font-foreground:         #<wallbash_1xa2>;
+  --color-master-font-foreground-bright:  #<wallbash_1xa4>;
+  --color-master-font-background:         #<wallbash_pry1>;
+  --color-master-font-background-bright:  #<wallbash_1xa1>;
+  --color-master-font-midtone1:           #<wallbash_1xa1>;
+  --color-master-font-midtone4:           #<wallbash_1xa2>;
+  --color-master-font-midtone5:           #<wallbash_1xa3>;
+
+  /** These variables are used in some of the gradients */
+  --color-master-background_rgb:          <wallbash_pry1>;
+  --color-master-background2_rgb:         <wallbash_pry4>;
+  --color-master-background3_rgb:         <wallbash_pry2>;
+  --color-master-background4_rgb:         <wallbash_pry1>;
+  --color-master-background5_rgb:         <wallbash_pry2>;
+  --color-master-background6_rgb:         <wallbash_pry3>;
+
+  --color-master-background-orange:       #<wallbash_pry4>;
+  --color-master-background-orange2:      #<wallbash_pry3>;
+  --color-master-background-orange3:      #<wallbash_pry2>;
+  --color-master-background-orange4:      #<wallbash_pry1>;
+
+  --color-master-background-orange_rgb:   #<wallbash_pry4_rgb>;
+  --color-master-background-orange2_rgb:  #<wallbash_pry3_rgb>;
+  --color-master-background-orange3_rgb:  #<wallbash_pry2_rgb>;
+
+  --color-master-foreground_rgb:          <wallbash_1xa2_rgb>;
+  --color-master-foreground-bright_rgb:   <wallbash_1xa4_rgb>;
+  --color-master-foreground-bright2_rgb:  <wallbash_1xa4_rgb>;
+
+  --color-master-gp-grad-stop1_rgb: <wallbash_1xa1_rgb>;
+  --color-master-gp-grad-stop2_rgb: <wallbash_1xa2_rgb>;
+  --color-master-gp-grad-stop3_rgb: <wallbash_1xa3_rgb>;
+
+  /* Overriding color of colored toggles */
+  --colored-toggles-desktop-main-color: var(--color-master-highlight) !important;
+  --colored-toggles-desktop-main-color_hover: var(--color-master-highlight_hover) !important;
+  --colored-toggles-desktop-friends-text-color: var(--color-master-font-foreground-bright) !important;
+
+  --skinny-header-icon-color: var(--color-master-font-foreground) !important;
+  --skinny-header-icon-hover-color: var(--color-master-font-foreground-bright) !important;
+}

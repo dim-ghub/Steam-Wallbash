@@ -1,0 +1,431 @@
+$HOME/homebrew/themes/Color\ Master/theme.json|$HOME/.config/hyde/wallbash/scripts/steam.sh -r
+{
+  "name": "Color Master",
+  "author": "Tormak",
+  "version": "v1.6.1",
+  "manifest_version": 7,
+  "tabs": {
+    "default": [
+      "SteamLibraryWindow|Steam"
+    ],
+    "ctx-menus": [
+      "desktop",
+      "desktopoverlay",
+      "desktopcontextmenu"
+    ],
+    "modals": [
+      "desktop",
+      "desktopoverlay"
+    ]
+  },
+  "inject": {
+    "shared/index.css": [
+      ".*"
+    ],
+    "shared/tooltips.css": [
+      ".*"
+    ],
+    "shared/navbar.css": [],
+    "shared/nav-menu.css": [
+      "ctx-menus"
+    ],
+    "shared/interactables.css": [
+      ".*"
+    ],
+    "secondary-windows/index.css": [
+      "modals"
+    ],
+    "library-tab/index.css": [],
+    "library-tab/games-list.css": [],
+    "library-tab/game-shelf.css": [],
+    "library-tab/game-page.css": [],
+    "library-tab/collections.css": [],
+    "library-tab/soundtrack.css": [],
+    "library-tab/footer.css": [],
+    "downloads-tab/index.css": [],
+    "store-tab/index.css": [],
+    "community-tab/index.css": [],
+    "secondary-windows/special-offers.css": [
+      "Special Offer.*",
+      "https://store.steampowered.com/marketingmessages.*"
+    ],
+    "secondary-windows/add-nonsteam-game.css": [
+      "Add Non-Steam Game"
+    ],
+    "secondary-windows/whats-new-settings.css": [
+      "What's New Settings"
+    ],
+    "secondary-windows/settings.css": [
+      "Steam Settings"
+    ],
+    "secondary-windows/screenshots-manager.css": [
+      "Screenshot Manager"
+    ]
+  },
+  "dependencies": {
+    "Desktop Colored Toggles": {}
+  },
+  "patches": {
+    "Background": {
+      "type": "none",
+      "values": {
+        "_": {}
+      },
+      "components": [
+        {
+          "name": "Background Dark",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_pry1>",
+          "css_variable": "color-master-background-dark",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Background",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_pry1>",
+          "css_variable": "color-master-background",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Background Bright",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa1>",
+          "css_variable": "color-master-background-bright",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Foreground",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa2>",
+          "css_variable": "color-master-foreground",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Foreground Light",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa4>",
+          "css_variable": "color-master-foreground-bright",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Midtone 1",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa1>",
+          "css_variable": "color-master-midtone1",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Midtone 2",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa5>",
+          "css_variable": "color-master-midtone2",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Midtone 3",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_pry2>",
+          "css_variable": "color-master-midtone3",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Midtone 4",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa2>",
+          "css_variable": "color-master-midtone4",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Midtone 5",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa3>",
+          "css_variable": "color-master-midtone5",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Highlight 1",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa1>",
+          "css_variable": "color-master-highlight",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Highlight 1 Hover",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa2>",
+          "css_variable": "color-master-highlight_hover",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Highlight 2",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#98BC37",
+          "css_variable": "color-master-highlight2",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Warning",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#F75341",
+          "css_variable": "color-master-warning",
+          "tabs": [
+            ".*"
+          ]
+        }
+      ]
+    },
+    "Text": {
+      "type": "none",
+      "values": {
+        "_": {}
+      },
+      "components": [
+        {
+          "name": "Light",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa2>",
+          "css_variable": "color-master-font-foreground",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Bright Light",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa4>",
+          "css_variable": "color-master-font-foreground-bright",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Dark",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_pry1>",
+          "css_variable": "color-master-font-background",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Bright Dark",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa1>",
+          "css_variable": "color-master-font-background-bright",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Midtone 1",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa1>",
+          "css_variable": "color-master-font-midtone1",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Midtone 4",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa2>",
+          "css_variable": "color-master-font-midtone4",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Midtone 5",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa3>",
+          "css_variable": "color-master-font-midtone5",
+          "tabs": [
+            ".*"
+          ]
+        }
+      ]
+    },
+    "Background Gradient": {
+      "type": "none",
+      "values": {
+        "_": {}
+      },
+      "components": [
+        {
+          "name": "Stop 2",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa3>",
+          "css_variable": "color-master-background2",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Stop 3",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa2>",
+          "css_variable": "color-master-background3",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Stop 4",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa1>",
+          "css_variable": "color-master-background4",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Stop 5",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa2>",
+          "css_variable": "color-master-background5",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Stop 6",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa3>",
+          "css_variable": "color-master-background6",
+          "tabs": [
+            ".*"
+          ]
+        }
+      ]
+    },
+    "Community Content Gradient": {
+      "type": "none",
+      "values": {
+        "_": {}
+      },
+      "components": [
+        {
+          "name": "Stop 1",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_pry4>",
+          "css_variable": "color-master-background-orange",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Stop 2",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_pry3>",
+          "css_variable": "color-master-background-orang2",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Stop 3",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_pry2>",
+          "css_variable": "color-master-background-orange3",
+          "tabs": [
+            ".*"
+          ]
+        }
+      ]
+    },
+    "Game Page Gradient": {
+      "type": "none",
+      "values": {
+        "_": {}
+      },
+      "components": [
+        {
+          "name": "Stop 1",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa4>",
+          "css_variable": "color-master-gp-grad-stop1",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Stop 2",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa5>",
+          "css_variable": "color-master-gp-grad-stop2",
+          "tabs": [
+            ".*"
+          ]
+        },
+        {
+          "name": "Stop 3",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#<wallbash_1xa6>",
+          "css_variable": "color-master-gp-grad-stop3",
+          "tabs": [
+            ".*"
+          ]
+        }
+      ]
+    }
+  },
+  "id": "0f650275-3e2f-47f2-bf3c-8ecae2324a91"
+}
