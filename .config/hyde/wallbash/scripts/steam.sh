@@ -17,25 +17,25 @@ if [[ "$1" == "-r" ]]; then
     # restart plugin_loader
     sudo $SYSTEMCTL_PATH restart plugin_loader
 else
-    # Install Decky Loader
+    # Install Decky Loader if missing
     if [ ! -d "$HOME/homebrew" ]; then
         echo "Decky Loader not detected. Running installer..."
         sh -c 'rm -f /tmp/user_install_script.sh; \
         if curl -S -s -L -O --output-dir /tmp/ --connect-timeout 60 https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/user_install_script.sh; \
         then bash /tmp/user_install_script.sh; \
         else echo "Something went wrong, please report this if it is a bug"; read; fi'
+    fi
 
-        # Step 2: Clone SteamBash and copy themes
-        echo "Cloning SteamBash and installing themes..."
-        git clone https://github.com/dim-ghub/SteamBash.git "$HOME/SteamBash"
+    # Always attempt to install themes
+    echo "Cloning SteamBash and installing themes..."
+    git clone https://github.com/dim-ghub/SteamBash.git "$HOME/SteamBash"
 
-        if [ -d "$HOME/SteamBash/themes" ]; then
-            mkdir -p "$HOME/homebrew/themes"
-            cp -r "$HOME/SteamBash/themes/"* "$HOME/homebrew/themes/"
-            echo "Themes copied to ~/homebrew/themes/"
-        else
-            echo "Warning: SteamBash/themes folder not found."
-        fi
+    if [ -d "$HOME/SteamBash/themes" ]; then
+        mkdir -p "$HOME/homebrew/themes"
+        cp -r "$HOME/SteamBash/themes/"* "$HOME/homebrew/themes/"
+        echo "Themes copied to ~/homebrew/themes/"
+    else
+        echo "Warning: SteamBash/themes folder not found."
     fi
 
     # sudo rule
@@ -61,6 +61,10 @@ else
 
         rm -f \$TEMP_FILE
     "
+
+    if [ $? -ne 0 ]; then
+        echo "Warning: Failed to add sudo rule with pkexec. You may be prompted for a password when restarting plugin_loader."
+    fi
 
     # apply wallbash
     echo "Applying Steam color configs..."
