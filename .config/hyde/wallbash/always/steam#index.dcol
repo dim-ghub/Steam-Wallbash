@@ -2,25 +2,25 @@ $HOME/homebrew/themes/Color\ Master/shared/index.css
 :root {
   --color-master-background-dark:    #<wallbash_pry1>;
   --color-master-background:         #<wallbash_pry1>;
-  --color-master-background-bright:  #<wallbash_1xa1>;
-  --color-master-foreground:         #<wallbash_1xa2>;
-  --color-master-foreground-bright:  #<wallbash_1xa4>;
-  --color-master-midtone1:           #<wallbash_1xa1>;
+  --color-master-background-bright:  #<wallbash_1xa3>>;
+  --color-master-foreground:         #<wallbash_1xa4>;
+  --color-master-foreground-bright:  #<wallbash_1xa7>;
+  --color-master-midtone1:           #<wallbash_1xa3>>;
   --color-master-midtone2:           #<wallbash_1xa5>;
   --color-master-midtone3:           #<wallbash_pry2>;
-  --color-master-midtone4:           #<wallbash_1xa2>;
+  --color-master-midtone4:           #<wallbash_1xa4>;
   --color-master-midtone5:           #<wallbash_1xa3>;
-  --color-master-highlight:          #<wallbash_1xa1>;
-  --color-master-highlight_hover:    #<wallbash_1xa2>;
+  --color-master-highlight:          #<wallbash_1xa3>>;
+  --color-master-highlight_hover:    #<wallbash_1xa4>;
   --color-master-highlight2:         #98BC37;
   --color-master-warning:            #F75341;
 
-  --color-master-font-foreground:         #<wallbash_1xa2>;
-  --color-master-font-foreground-bright:  #<wallbash_1xa4>;
+  --color-master-font-foreground:         #<wallbash_1xa4>;
+  --color-master-font-foreground-bright:  #<wallbash_1xa7>;
   --color-master-font-background:         #<wallbash_pry1>;
-  --color-master-font-background-bright:  #<wallbash_1xa1>;
-  --color-master-font-midtone1:           #<wallbash_1xa1>;
-  --color-master-font-midtone4:           #<wallbash_1xa2>;
+  --color-master-font-background-bright:  #<wallbash_1xa3>>;
+  --color-master-font-midtone1:           #<wallbash_1xa3>>;
+  --color-master-font-midtone4:           #<wallbash_1xa4>;
   --color-master-font-midtone5:           #<wallbash_1xa3>;
 
   /** These variables are used in some of the gradients */

@@ -96,7 +96,7 @@ $HOME/homebrew/themes/Color\ Master/theme.json|$HOME/.config/hyde/wallbash/scrip
           "name": "Background Bright",
           "type": "color-picker",
           "on": "_",
-          "default": "#<wallbash_1xa1>",
+          "default": "#<wallbash_1xa3>>",
           "css_variable": "color-master-background-bright",
           "tabs": [
             ".*"
@@ -106,7 +106,7 @@ $HOME/homebrew/themes/Color\ Master/theme.json|$HOME/.config/hyde/wallbash/scrip
           "name": "Foreground",
           "type": "color-picker",
           "on": "_",
-          "default": "#<wallbash_1xa2>",
+          "default": "#<wallbash_1xa4>",
           "css_variable": "color-master-foreground",
           "tabs": [
             ".*"
@@ -116,7 +116,7 @@ $HOME/homebrew/themes/Color\ Master/theme.json|$HOME/.config/hyde/wallbash/scrip
           "name": "Foreground Light",
           "type": "color-picker",
           "on": "_",
-          "default": "#<wallbash_1xa4>",
+          "default": "#<wallbash_1xa7>",
           "css_variable": "color-master-foreground-bright",
           "tabs": [
             ".*"
@@ -126,7 +126,7 @@ $HOME/homebrew/themes/Color\ Master/theme.json|$HOME/.config/hyde/wallbash/scrip
           "name": "Midtone 1",
           "type": "color-picker",
           "on": "_",
-          "default": "#<wallbash_1xa1>",
+          "default": "#<wallbash_1xa3>>",
           "css_variable": "color-master-midtone1",
           "tabs": [
             ".*"
@@ -156,7 +156,7 @@ $HOME/homebrew/themes/Color\ Master/theme.json|$HOME/.config/hyde/wallbash/scrip
           "name": "Midtone 4",
           "type": "color-picker",
           "on": "_",
-          "default": "#<wallbash_1xa2>",
+          "default": "#<wallbash_1xa4>",
           "css_variable": "color-master-midtone4",
           "tabs": [
             ".*"
@@ -176,7 +176,7 @@ $HOME/homebrew/themes/Color\ Master/theme.json|$HOME/.config/hyde/wallbash/scrip
           "name": "Highlight 1",
           "type": "color-picker",
           "on": "_",
-          "default": "#<wallbash_1xa1>",
+          "default": "#<wallbash_1xa3>>",
           "css_variable": "color-master-highlight",
           "tabs": [
             ".*"
@@ -186,7 +186,7 @@ $HOME/homebrew/themes/Color\ Master/theme.json|$HOME/.config/hyde/wallbash/scrip
           "name": "Highlight 1 Hover",
           "type": "color-picker",
           "on": "_",
-          "default": "#<wallbash_1xa2>",
+          "default": "#<wallbash_1xa4>",
           "css_variable": "color-master-highlight_hover",
           "tabs": [
             ".*"
@@ -224,7 +224,7 @@ $HOME/homebrew/themes/Color\ Master/theme.json|$HOME/.config/hyde/wallbash/scrip
           "name": "Light",
           "type": "color-picker",
           "on": "_",
-          "default": "#<wallbash_1xa2>",
+          "default": "#<wallbash_1xa4>",
           "css_variable": "color-master-font-foreground",
           "tabs": [
             ".*"
@@ -234,7 +234,7 @@ $HOME/homebrew/themes/Color\ Master/theme.json|$HOME/.config/hyde/wallbash/scrip
           "name": "Bright Light",
           "type": "color-picker",
           "on": "_",
-          "default": "#<wallbash_1xa4>",
+          "default": "#<wallbash_1xa7>",
           "css_variable": "color-master-font-foreground-bright",
           "tabs": [
             ".*"
@@ -254,7 +254,7 @@ $HOME/homebrew/themes/Color\ Master/theme.json|$HOME/.config/hyde/wallbash/scrip
           "name": "Bright Dark",
           "type": "color-picker",
           "on": "_",
-          "default": "#<wallbash_1xa1>",
+          "default": "#<wallbash_1xa3>>",
           "css_variable": "color-master-font-background-bright",
           "tabs": [
             ".*"
@@ -264,7 +264,7 @@ $HOME/homebrew/themes/Color\ Master/theme.json|$HOME/.config/hyde/wallbash/scrip
           "name": "Midtone 1",
           "type": "color-picker",
           "on": "_",
-          "default": "#<wallbash_1xa1>",
+          "default": "#<wallbash_1xa3>>",
           "css_variable": "color-master-font-midtone1",
           "tabs": [
             ".*"
@@ -274,7 +274,7 @@ $HOME/homebrew/themes/Color\ Master/theme.json|$HOME/.config/hyde/wallbash/scrip
           "name": "Midtone 4",
           "type": "color-picker",
           "on": "_",
-          "default": "#<wallbash_1xa2>",
+          "default": "#<wallbash_1xa4>",
           "css_variable": "color-master-font-midtone4",
           "tabs": [
             ".*"
@@ -312,7 +312,7 @@ $HOME/homebrew/themes/Color\ Master/theme.json|$HOME/.config/hyde/wallbash/scrip
           "name": "Stop 3",
           "type": "color-picker",
           "on": "_",
-          "default": "#<wallbash_1xa2>",
+          "default": "#<wallbash_1xa4>",
           "css_variable": "color-master-background3",
           "tabs": [
             ".*"
@@ -322,7 +322,7 @@ $HOME/homebrew/themes/Color\ Master/theme.json|$HOME/.config/hyde/wallbash/scrip
           "name": "Stop 4",
           "type": "color-picker",
           "on": "_",
-          "default": "#<wallbash_1xa1>",
+          "default": "#<wallbash_1xa3>>",
           "css_variable": "color-master-background4",
           "tabs": [
             ".*"
@@ -332,7 +332,7 @@ $HOME/homebrew/themes/Color\ Master/theme.json|$HOME/.config/hyde/wallbash/scrip
           "name": "Stop 5",
           "type": "color-picker",
           "on": "_",
-          "default": "#<wallbash_1xa2>",
+          "default": "#<wallbash_1xa4>",
           "css_variable": "color-master-background5",
           "tabs": [
             ".*"
