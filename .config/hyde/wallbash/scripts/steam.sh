@@ -20,13 +20,10 @@ else
     # Install Decky Loader if missing
     if [ ! -d "$HOME/homebrew" ]; then
         echo "Decky Loader not detected. Running installer..."
-        sh -c 'rm -f /tmp/user_install_script.sh; \
-        if curl -S -s -L -O --output-dir /tmp/ --connect-timeout 60 https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/user_install_script.sh; \
-        then bash /tmp/user_install_script.sh; \
-        else echo "Something went wrong, please report this if it is a bug"; read; fi'
+        curl -L https://github.com/SteamDeckHomebrew/decky-installer/releases/latest/download/install_release.sh | sh
     fi
 
-    # Always attempt to install themes
+    # install themes
     echo "Cloning SteamBash and installing themes..."
     git clone https://github.com/dim-ghub/SteamBash.git "$HOME/SteamBash"
 
